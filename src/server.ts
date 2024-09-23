@@ -4,7 +4,12 @@ const app: Express = express();
 const port = 3000;
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hola World!");
+  res.send("Hola World and TypeScript at Allianz!");
+});
+
+
+app.get("/home", (req: Request, res: Response) => {
+  res.send("home API!");
 });
 
 app.listen(port, () => {
